@@ -2,15 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoj</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TutoJs</title>
+    
 </head>
 <body>
     <h1>
-        Formation MEAN STACK by logone digital
+        Formation MEAN STACK by logone digital 
     </h1>
+    
     <h3>Bienvenue à tous chers stagiaires</h3>
-    <p>Aujourd'hui nous allons etudier le javascript</p>
+    <p>Aujourd'hui nous allons étudier le javascript</p>
+    
+    <script>
+        var eleves = new Object();
+        eleves.nom = "Ayonti";
+        eleves.prenom = "Olivier";
+        eleves.age = 30;
+   document.querySelector('p').innerHTML += `mon nom est ${eleves.nom}`;
+   document.querySelector('p').innerHTML += `mon prenom est ${eleves.prenom}`;
+   document.querySelector('p').innerHTML += `mon âge est ${eleves.age}`;
+
+    function incrementation(age){
+        age = age + 1 ;
+        console.log(`mon age incrémenté est ${age}`);
+    }
+   incrementation(20);
+
+    </script>   
 </body>
-<script src="script.js"></script>
+
 </html>
