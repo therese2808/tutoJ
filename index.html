@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoj</title>
-    
+    <title>Elèves</title>
 </head>
 <body>
-    <h1>
-        Formation MEAN STACK by logone digital
-    </h1>
-    <h2 id="test"></h2>
-    <script src="script.js"></script>
-    <h3>Bienvenue à tous chers stagiaires</h3>
-    <p>Aujourd'hui nous allons etudier le javascript</p>
-    <script>
-        var apotre = "test apotre"
-        apotre=102
-        let therese= " test therese"
-        therese=99
-        const testet= 'test test'
-        console.log(`apotre `+apotre+`
-        therese `+therese+`
-        testeet `+testet)
-    </script>
-</body>
+       <p>Création d'une variable "eleves" avec les différents champs :</p>
+    <pre id="output"></pre>
 
+    <script>
+        
+
+        // Déclaration d'un tableau d'objets pour stocker des informations sur les élèves
+        var eleves = [
+            {
+                nom: "Dupont",
+                prenom: "Jean",
+                age: 15
+            },
+            {
+                nom: "Martin",
+                prenom: "Marie",
+                age: 16
+            },
+            {
+                nom: "Lefebvre",
+                prenom: "Pierre",
+                age: 17
+            }
+        ];
+
+        // Affichage de la variable "eleves" dans la console
+        document.getElementById('output').textContent = JSON.stringify(eleves, null, 2);
+    </script>
+   
+    <script src="script.js"></script>
+</body>
 </html>
