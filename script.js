@@ -111,7 +111,7 @@ var employe = []
 console.log(`Declaraion crochet `+typeof employe);
 var employe = ["employé1","emloyé2","employé3"]
 console.log(`Declaraion instation `+  employe);
-// var employe = new Array()
+//x var employe = new Array()
 // console.log(`Declaraion new array `+typeof employe);
 
 // manipulation array
@@ -144,3 +144,84 @@ console.log(array);
 
 let array1= array.map(x=>x+3)
 console.log(array1);
+
+//Structure repetive et conditionnelle
+
+var toto= 2
+var tata =2
+// boucle if
+if(tata!==toto)// je n'ai pmas mis les crochet car je n'ai plus de 2 lignes
+console.log('comparaison reussie');
+
+// boucle iifelse
+if(tata===toto)
+console.log('sont similaires');
+else
+console.log('sont differents');
+//boucle if else if
+if(tata==toto)
+console.log('sont similaires');
+else if(toto!=tata)
+console.log('sont differents');
+else
+console.log(typeof(toto)==typeof tata);
+console.log(`N'ont pas le même type`);
+
+Etudiant = {nom:'Appotre', prenom:'therese', solde:"test"}
+// Switch
+switch (Etudiant.solde) {
+    case 'paye':
+        document.write('Etudiant a paye')
+        break;
+    case 'impaye':
+        document.write(`Etudiant n'a pas paye`)
+        break;
+    case 'inscrit':
+    document.write(`Etudiant est inscrit`)
+    break;
+    default:
+        document.write('Potentiel etudiant')
+        break;
+}
+//Boucle ternaire
+(tata===toto)?console.log('sont similaires'):console.log('sont differents');
+
+// Boucle For
+
+tab=[Etudiant]
+tab[0]= {nom:'Appotre', prenom:'therese', solde:"test"}
+tab[1]={nom:'Ali', prenom:'olivier', solde:"paye"}
+tab[2]={nom:'mercy', prenom:'serge', solde:"impaye"}
+for(let i = 0;i<tab.length;i++){
+    console.log(tab[i]);
+}
+// boucle while
+n= 0
+while (n<3) {
+    n++;
+    console.log(n);
+
+}
+Etudiant ={nom:'th', prenom:'test', age:22}
+//fonction
+/*function etudiantfonction(Etudiant){
+    var concition
+   (Etudiant.age<20)? concition= true:concition=false
+   return concition
+}*/
+// 2e facon d'ecrire la fonction etutiantfonction
+function etudiantfonction(Etudiant){
+    if(Etudiant.age<20)
+    return true
+else return false
+}
+
+function afficheEtudiant(Etudiant) {
+    console.log(Etudiant.nom +' ' +
+        Etudiant.prenom +
+        Etudiant.age)
+
+}
+afficheEtudiant(Etudiant)
+var condition=etudiantfonction(Etudiant)
+console.log(condition);
