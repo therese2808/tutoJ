@@ -187,12 +187,16 @@ switch (Etudiant.solde) {
 (tata===toto)?console.log('sont similaires'):console.log('sont differents');
 
 // Boucle For
-
+// avec l'incrementation
 tab=[Etudiant]
 tab[0]= {nom:'Appotre', prenom:'therese', solde:"test"}
 tab[1]={nom:'Ali', prenom:'olivier', solde:"paye"}
 tab[2]={nom:'mercy', prenom:'serge', solde:"impaye"}
-for(let i = 0;i<tab.length;i++){
+for(let i = 0;i>tab.length;i++){
+    console.log(tab[i]);
+}
+// avec decrementation
+for(let i = tab.length;i>=0;i--){
     console.log(tab[i]);
 }
 // boucle while
@@ -225,3 +229,13 @@ function afficheEtudiant(Etudiant) {
 afficheEtudiant(Etudiant)
 var condition=etudiantfonction(Etudiant)
 console.log(condition);
+var num= 5
+// exeption
+try {
+   if (num%2!=0)
+    throw new Error ('Nombre impair')
+} catch (error) {
+    console.log(error);
+}finally{
+    console.log('Exception executée');
+}
