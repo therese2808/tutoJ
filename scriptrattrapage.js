@@ -102,3 +102,59 @@ tab3=[1,2,7,8,2,3,1]
 
 var montab=new Array('d1','d2','d3','d4')
 console.log(montab);
+
+montab.splice(2,0,prof=new Object())
+console.log(montab);
+
+montab[2]={nomProf:'th', matiere:'js', heure:2}
+console.log(montab);
+prof={nomProf:'therese', matiere:'js', heure:2}
+montab[2]=prof
+console.log(montab);
+
+var mdpIns=true
+var mdpSaisie=4588
+//Boucle if et else
+// if(mdpIns!=mdpSaisie)
+// {
+//     document.write("Mot de passe incorrecte")
+// }else{
+//     document.write("Mot de passe correcte")
+// }
+
+//Boucle if ifelse
+
+if(mdpIns==mdpSaisie)
+document.write('Correcte')
+else if (typeof mdpIns!= typeof mdpSaisie) {
+    document.write('Les types de variables sont différents')
+} else {
+    document.write("Mot de passe correcte")
+}
+
+//switch
+var n=10
+switch (n) {
+    case 0:
+        console.log('Climatiseur eteint');
+        break;
+    case 1:
+        console.log('Climatiseur allumé');
+        break;
+
+    default:
+        console.log('climatiseur en veille');
+        break;
+}
+
+//for 
+for (let index = 0; index < montab.length; index++) {
+    console.log(montab[index]);
+    console.log(`index = ${index}`);
+    
+}
+
+//While
+while (n>5) {
+    console.log('Bonjour');
+}
