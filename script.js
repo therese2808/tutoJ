@@ -260,3 +260,23 @@ try {
 }finally{
     console.log('Exception executée');
 }
+//Comparaison de 2 nombres
+function comparaison(a,c){
+    if(a==c){
+        console.log("a et c sont egaux");
+    }
+   else{
+        console.log("a et c ne sont pas egaux");
+   }
+}
+try {
+    a=true, c="true";
+        comparaison(a,c);
+         if (typeof a!== typeof c)
+                throw new Error ("a et c sont de types differents"); 
+        } catch (error) {
+            console.log(error);
+        }
+        finally{
+            console.log("comparaison effectuee");
+  }

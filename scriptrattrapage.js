@@ -158,3 +158,13 @@ for (let index = 0; index < montab.length; index++) {
 while (n>5) {
     console.log('Bonjour');
 }
+
+function paragraph(){
+    document.getElementById('function').innerHTML="Function exectée"
+}
+
+try {
+    nu
+} catch (error) {
+    
+}
