@@ -280,3 +280,38 @@ try {
         finally{
             console.log("comparaison effectuee");
   }
+
+var str="true";
+var b=true; 
+function compare(b,str){
+    try {
+     //Exception personnalisee. Si str n'est pas un booleen
+        if (b!==str) {
+            throw new Error (`Ces valeurs ne se valent pas. B est un ${typeof b} de valeur ${b} et str est un ${typeof str} de valeur ${str}`);
+             }else console.log("les deux sont egaux");
+        } catch (error) {
+             console.log(`L'erreur est ${error}`);
+         }finally{
+             console.log(`La comparaison a ete faite`);
+}
+}
+compare(b,str);
+
+function comparaisonM(a=true,b="true") {
+    if (a==b) 
+    console.log('les valeurs sont egales');
+    else {
+        try {
+            if (typeof a!==typeof b) {
+               throw new Error ("les types sont differents")
+            }
+            
+        } catch (error) {
+          console.log(`nous pouvons donc dire que ${error}`)  
+        }
+        finally{
+            console.log("execution de lexeption")
+        }
+    }
+}
+comparaison(b,str)
