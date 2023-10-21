@@ -315,3 +315,48 @@ function comparaisonM(a=true,b="true") {
     }
 }
 comparaison(b,str)
+
+// declaration d'une fonction asynchrone
+async function bonjour (){
+    document.write ('Programmation asynchrone')
+}
+
+//Utilisation de fonction de callback
+setTimeout(() => {
+    alert('Callback function')
+    
+}, 5000);
+
+// Declaration d'une promesse
+const promesse1= new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promesse affichée")
+    }, 10000);    
+})
+
+console.log(promesse1);
+
+// Il est preferable de mettre les promesses dans un try catch
+
+const promesse2= new Promise((resolve, reject) => {
+    try {
+        setTimeout(() => {
+            resolve("promesse affichée")
+        }, 10000); 
+    } catch (error) {
+        console.error(error);
+    }
+      
+})
+console.log(promesse2);
+
+// Utilisation de await
+
+async function awaitfunction(){
+    try {
+        const promesse3= await promesse1()
+        console.log(promesse3);
+    } catch (error) {
+        console.error(error);
+    }
+}
